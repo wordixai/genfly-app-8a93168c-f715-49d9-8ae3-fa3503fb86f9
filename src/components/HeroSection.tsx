@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { Utensils, Calendar, ArrowUp, Lightbulb } from "lucide-react";
+import { ChefHat, Calendar, ArrowUp, Lightbulb } from "lucide-react";
 
 const HeroSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -13,30 +13,30 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="tw-text-center tw-text-white tw-items-center tw-py-14 bg-hero-gradient dot-bg">
-      <div className="tw-max-w-4xl tw-mx-auto tw-px-3 md:tw-px-8">
-        <h1 className="tw-text-4xl sm:tw-text-5xl tw-mb-4 tw-font-bold">
+    <section className="text-center text-white items-center py-14 bg-gradient-to-br to-purple-950 from-fuchsia-900 dot-bg">
+      <div className="max-w-4xl mx-auto px-3 md:px-8">
+        <h1 className="text-4xl sm:text-5xl mb-4 font-bold">
           Create AI Recipes & Meal Plans
         </h1>
-        <p className="tw-text-lg tw-mb-8">
+        <p className="text-lg mb-8">
           DishGen can generate all-new recipes and meal plans on demand. Simply enter your ingredients,
           dietary needs, a recipe idea, or meal plan request – DishGen will create something just for you...
         </p>
 
-        <div className="tw-flex tw-flex-col tw-items-center tw-w-full tw-mx-auto">
-          <div className="tw-w-full tw-bg-white tw-rounded-3xl tw-overflow-hidden tw-shadow-lg tw-border tw-border-solid tw-border-gray-900">
-            <div className="tw-relative tw-px-4 tw-pt-3 tw-pb-2">
+        <div className="flex flex-col items-center w-full mx-auto">
+          <div className="w-full bg-white rounded-3xl overflow-hidden shadow-lg border border-solid border-gray-900">
+            <div className="relative px-4 pt-3 pb-2">
               <Textarea
                 placeholder=""
                 rows={2}
                 value={inputValue}
                 onChange={handleInputChange}
-                className="tw-bg-transparent tw-w-full tw-resize-none tw-outline-none tw-border-none tw-text-lg tw-text-gray-800 tw-font-normal tw-h-16 tw-overflow-auto"
+                className="bg-transparent w-full resize-none outline-none border-none text-lg text-gray-800 font-normal h-16 overflow-auto"
                 style={{ fontFamily: "system-ui, -apple-system, sans-serif" }}
               />
               {showPlaceholder && (
                 <div 
-                  className="tw-absolute tw-text-start tw-top-3 tw-left-4 tw-text-lg tw-text-gray-400 tw-pointer-events-none"
+                  className="absolute text-start top-3 left-4 text-lg text-gray-400 pointer-events-none"
                   style={{ animation: "0.5s ease 0s 1 normal forwards running slideDownIn", opacity: 1 }}
                 >
                   help me create a healthy recipe for...
@@ -44,14 +44,14 @@ const HeroSection = () => {
               )}
             </div>
 
-            <div className="tw-border-t tw-border-gray-200 tw-p-3 sm:tw-p-4" style={{ borderTop: "1px solid rgba(0, 0, 0, 0.1)" }}>
+            <div className="border-t border-gray-200 p-3 sm:p-4" style={{ borderTop: "1px solid rgba(0, 0, 0, 0.1)" }}>
               {/* Desktop Layout */}
-              <div className="tw-hidden sm:tw-flex tw-items-center tw-justify-between">
-                <div className="tw-flex tw-items-center tw-gap-2">
-                  <span className="tw-text-gray-400 tw-text-sm">tools</span>
-                  <div className="tw-flex tw-gap-2">
+              <div className="hidden sm:flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="text-gray-400 text-sm">tools</span>
+                  <div className="flex gap-2">
                     <div 
-                      className="tw-flex tw-items-center tw-gap-1.5 tw-px-4 tw-py-2 tw-rounded-full tw-text-sm tw-transition-all tw-duration-200 tw-cursor-pointer hover:tw-opacity-95"
+                      className="flex items-center gap-1.5 px-4 py-2 rounded-full text-sm transition-all duration-200 cursor-pointer hover:opacity-95"
                       style={{
                         backgroundColor: "rgba(233, 213, 255, 0.8)",
                         color: "rgb(109, 40, 217)",
@@ -60,11 +60,11 @@ const HeroSection = () => {
                         fontWeight: 500
                       }}
                     >
-                      <Utensils className="tw-text-purple-600 tw-text-xs" size={16} />
+                      <ChefHat className="text-purple-600 text-xs" size={16} />
                       recipe creator
                     </div>
                     <div 
-                      className="tw-flex tw-items-center tw-gap-1.5 tw-px-4 tw-py-2 tw-rounded-full tw-text-sm tw-transition-all tw-duration-200 tw-cursor-pointer hover:tw-opacity-95"
+                      className="flex items-center gap-1.5 px-4 py-2 rounded-full text-sm transition-all duration-200 cursor-pointer hover:opacity-95"
                       style={{
                         backgroundColor: "rgba(254, 226, 204, 0.8)",
                         color: "rgb(194, 65, 12)",
@@ -73,30 +73,30 @@ const HeroSection = () => {
                         fontWeight: 500
                       }}
                     >
-                      <Calendar className="tw-text-orange-600 tw-text-xs" size={16} />
+                      <Calendar className="text-orange-600 text-xs" size={16} />
                       meal planner
                     </div>
                   </div>
                 </div>
                 <div 
-                  className="tw-bg-black tw-text-white tw-rounded-full tw-px-6 tw-py-2 tw-flex tw-items-center tw-gap-1 tw-transition-all tw-duration-200 tw-opacity-50"
+                  className="bg-black text-white rounded-full px-6 py-2 flex items-center gap-1 transition-all duration-200 opacity-50"
                   style={{ pointerEvents: "none", boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 4px" }}
                 >
-                  submit <ArrowUp className="tw-text-xl" size={16} />
+                  submit <ArrowUp className="text-xl" size={16} />
                 </div>
               </div>
 
               {/* Mobile Layout */}
-              <div className="sm:tw-hidden tw-flex tw-flex-col tw-items-center tw-gap-3">
+              <div className="sm:hidden flex flex-col items-center gap-3">
                 <div 
-                  className="tw-bg-black tw-text-white tw-rounded-full tw-px-6 tw-py-2 tw-flex tw-items-center tw-justify-center tw-gap-1 tw-transition-all tw-duration-200 tw-w-full tw-opacity-50"
+                  className="bg-black text-white rounded-full px-6 py-2 flex items-center justify-center gap-1 transition-all duration-200 w-full opacity-50"
                   style={{ pointerEvents: "none", boxShadow: "rgba(0, 0, 0, 0.25) 0px 2px 4px", minWidth: "120px" }}
                 >
-                  submit <ArrowUp className="tw-text-xl" size={16} />
+                  submit <ArrowUp className="text-xl" size={16} />
                 </div>
-                <div className="tw-flex tw-items-center tw-justify-center tw-w-full tw-gap-2 tw-px-2">
+                <div className="flex items-center justify-center w-full gap-2 px-2">
                   <div 
-                    className="tw-flex tw-items-center tw-justify-center tw-gap-1.5 tw-px-4 tw-py-2 tw-rounded-full tw-text-sm tw-transition-all tw-duration-200 tw-cursor-pointer hover:tw-opacity-95 tw-flex-1"
+                    className="flex items-center justify-center gap-1.5 px-4 py-2 rounded-full text-sm transition-all duration-200 cursor-pointer hover:opacity-95 flex-1"
                     style={{
                       backgroundColor: "rgba(233, 213, 255, 0.8)",
                       color: "rgb(109, 40, 217)",
@@ -105,11 +105,11 @@ const HeroSection = () => {
                       fontWeight: 500
                     }}
                   >
-                    <Utensils className="tw-text-purple-600 tw-text-xs" size={16} />
+                    <ChefHat className="text-purple-600 text-xs" size={16} />
                     recipe creator
                   </div>
                   <div 
-                    className="tw-flex tw-items-center tw-justify-center tw-gap-1.5 tw-px-4 tw-py-2 tw-rounded-full tw-text-sm tw-transition-all tw-duration-200 tw-cursor-pointer hover:tw-opacity-95 tw-flex-1"
+                    className="flex items-center justify-center gap-1.5 px-4 py-2 rounded-full text-sm transition-all duration-200 cursor-pointer hover:opacity-95 flex-1"
                     style={{
                       backgroundColor: "rgba(254, 226, 204, 0.8)",
                       color: "rgb(194, 65, 12)",
@@ -118,7 +118,7 @@ const HeroSection = () => {
                       fontWeight: 500
                     }}
                   >
-                    <Calendar className="tw-text-orange-600 tw-text-xs" size={16} />
+                    <Calendar className="text-orange-600 text-xs" size={16} />
                     meal planner
                   </div>
                 </div>
@@ -126,17 +126,17 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="tw-mt-4 tw-cursor-pointer tw-transition-all tw-duration-300 hover:tw-opacity-90">
+          <div className="mt-4 cursor-pointer transition-all duration-300 hover:opacity-90">
             <div 
-              className="tw-flex tw-items-center tw-px-4 sm:tw-px-6 tw-py-2 tw-rounded-3xl tw-font-semibold tw-text-gray-800 tw-text-sm sm:tw-text-base"
+              className="flex items-center px-4 sm:px-6 py-2 rounded-3xl font-semibold text-gray-800 text-sm sm:text-base"
               style={{
                 backgroundColor: "rgb(250, 226, 158)",
                 animation: "0.4s ease-out 0s 1 normal none running fadeIn",
                 boxShadow: "rgba(0, 0, 0, 0.05) 0px 2px 8px"
               }}
             >
-              <Lightbulb className="tw-text-yellow-600 tw-mr-2 tw-text-lg tw-flex-shrink-0" size={20} />
-              <span className="tw-line-clamp-2">Create a 7-day breakfast plan with different healthy smoothies</span>
+              <Lightbulb className="text-yellow-600 mr-2 text-lg flex-shrink-0" size={20} />
+              <span className="line-clamp-2">Create a 7-day breakfast plan with different healthy smoothies</span>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ import FeedbackButton from "@/components/FeedbackButton";
 
 const Index = () => {
   return (
-    <div className="tw-min-h-screen tw-bg-white">
+    <div className="min-h-screen bg-white">
       <Header />
       <main>
         <HeroSection />

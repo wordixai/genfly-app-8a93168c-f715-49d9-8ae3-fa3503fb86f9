@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 const FeedbackButton = () => {
   return (
     <a 
-      className="tw-hidden sm:tw-flex tw-items-center tw-justify-center tw-fixed tw-bottom-4 tw-right-4 tw-z-50 tw-bg-fuchsia-700 hover:tw-bg-fuchsia-800 tw-text-white tw-rounded-full tw-shadow-lg tw-w-14 tw-h-14 tw-text-3xl tw-transition tw-border-4 tw-border-fuchsia-200 focus:tw-outline-none" 
+      className="hidden sm:flex items-center justify-center fixed bottom-4 right-4 z-50 bg-fuchsia-700 hover:bg-fuchsia-800 text-white rounded-full shadow-lg w-14 h-14 text-3xl transition border-4 border-fuchsia-200 focus:outline-none" 
       href="#"
       aria-label="Send feedback"
       style={{ boxShadow: "rgba(120, 0, 180, 0.18) 0px 4px 24px 0px" }}

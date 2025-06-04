@@ -61,11 +61,11 @@ const FeaturedRecipes = () => {
   ];
 
   return (
-    <div className="tw-max-w-6xl tw-mx-auto tw-px-4 tw-mb-8">
-      <h2 className="tw-my-6 tw-text-center tw-text-4xl tw-font-bold font-secondary">
+    <div className="max-w-6xl mx-auto px-4 mb-8">
+      <h2 className="my-6 text-center text-4xl font-bold font-secondary">
         Featured AI Recipes
       </h2>
-      <div className="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {recipes.map((recipe, index) => (
           <RecipeCard key={index} {...recipe} />
         ))}
