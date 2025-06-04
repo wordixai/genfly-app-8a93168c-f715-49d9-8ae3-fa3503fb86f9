@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { ChefHat, Calendar, ArrowUp, Lightbulb } from "lucide-react";
+import { Utensils, Calendar, ArrowUp, Lightbulb } from "lucide-react";
 
 const HeroSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -13,7 +13,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="tw-text-center tw-text-white tw-items-center tw-py-14 tw-bg-gradient-to-br tw-to-purple-950 tw-from-fuchsia-900 dot-bg">
+    <section className="tw-text-center tw-text-white tw-items-center tw-py-14 bg-hero-gradient dot-bg">
       <div className="tw-max-w-4xl tw-mx-auto tw-px-3 md:tw-px-8">
         <h1 className="tw-text-4xl sm:tw-text-5xl tw-mb-4 tw-font-bold">
           Create AI Recipes & Meal Plans
@@ -60,7 +60,7 @@ const HeroSection = () => {
                         fontWeight: 500
                       }}
                     >
-                      <ChefHat className="tw-text-purple-600 tw-text-xs" size={16} />
+                      <Utensils className="tw-text-purple-600 tw-text-xs" size={16} />
                       recipe creator
                     </div>
                     <div 
@@ -105,7 +105,7 @@ const HeroSection = () => {
                       fontWeight: 500
                     }}
                   >
-                    <ChefHat className="tw-text-purple-600 tw-text-xs" size={16} />
+                    <Utensils className="tw-text-purple-600 tw-text-xs" size={16} />
                     recipe creator
                   </div>
                   <div 

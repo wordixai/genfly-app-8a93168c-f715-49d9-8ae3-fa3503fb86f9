@@ -72,7 +72,7 @@ const PricingSection = () => {
           </div>
 
           {/* Premium Plan */}
-          <div className="tw-flex-1 tw-bg-gradient-to-br tw-from-purple-900 tw-to-fuchsia-900 tw-rounded-3xl tw-p-8 tw-flex tw-flex-col tw-border tw-border-purple-700 tw-relative tw-min-h-[540px] tw-mx-4 md:tw-mx-0">
+          <div className="tw-flex-1 bg-premium-gradient tw-rounded-3xl tw-p-8 tw-flex tw-flex-col tw-border tw-border-purple-700 tw-relative tw-min-h-[540px] tw-mx-4 md:tw-mx-0">
             <div className="tw-flex tw-items-center tw-mb-4 tw-mt-0 tw-mx-auto">
               <span className="tw-bg-gradient-to-r tw-from-purple-700 tw-to-fuchsia-700 tw-text-white tw-px-4 tw-py-1 tw-rounded-full tw-text-md tw-font-semibold tw-mr-2">
                 Premium
@@ -127,7 +127,7 @@ const PricingSection = () => {
           </div>
 
           {/* Pro Plan */}
-          <div className="tw-flex-1 tw-bg-gradient-to-br tw-to-emerald-900 tw-from-emerald-800 tw-rounded-3xl tw-p-8 tw-flex tw-flex-col tw-border tw-border-gray-700 tw-relative tw-min-h-[540px] tw-mx-4 md:tw-mx-0">
+          <div className="tw-flex-1 bg-pro-gradient tw-rounded-3xl tw-p-8 tw-flex tw-flex-col tw-border tw-border-gray-700 tw-relative tw-min-h-[540px] tw-mx-4 md:tw-mx-0">
             <div className="tw-flex tw-items-center tw-mb-4 tw-mx-auto">
               <span className="tw-bg-emerald-700 tw-text-white tw-px-4 tw-py-1 tw-rounded-full tw-text-md tw-font-semibold tw-mr-2">
                 Pro

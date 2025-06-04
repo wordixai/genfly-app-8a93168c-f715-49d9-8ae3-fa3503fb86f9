@@ -6,14 +6,15 @@ const Header = () => {
       <div className="tw-max-w-7xl tw-mx-auto tw-px-4 sm:tw-px-6 lg:tw-px-8">
         <div className="tw-flex tw-justify-between tw-items-center tw-h-16">
           <div className="tw-flex tw-items-center">
-            <div className="tw-flex tw-items-center tw-space-x-2">
-              <div className="tw-w-8 tw-h-8 tw-bg-gradient-to-r tw-from-purple-600 tw-to-fuchsia-600 tw-rounded-full tw-flex tw-items-center tw-justify-center">
-                <span className="tw-text-white tw-font-bold tw-text-sm">D</span>
-              </div>
+            <a href="/" className="tw-flex tw-items-center tw-space-x-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="tw-text-purple-600">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor"/>
+                <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="currentColor"/>
+              </svg>
               <span className="tw-text-xl tw-font-bold tw-text-gray-900">
                 dish<span className="tw-text-purple-600">gen</span>
               </span>
-            </div>
+            </a>
           </div>
           
           <nav className="tw-hidden md:tw-flex tw-space-x-8">

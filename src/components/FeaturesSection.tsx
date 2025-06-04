@@ -2,7 +2,7 @@ import { Play } from "lucide-react";
 
 const FeaturesSection = () => {
   return (
-    <section className="tw-bg-gradient-to-br tw-to-purple-950 tw-from-neutral-800 tw-pb-12 tw-pt-10">
+    <section className="bg-features-gradient tw-pb-12 tw-pt-10">
       <span id="video"></span>
       <div className="tw-max-w-4xl tw-mx-auto tw-text-center tw-px-4 tw-mb-16">
         <div className="tw-flex tw-items-center tw-justify-center tw-mb-2">
@@ -146,7 +146,7 @@ const FeaturesSection = () => {
 
       {/* Personalized Profiles Section */}
       <div className="tw-mx-4 md:tw-mx-12">
-        <div className="tw-max-w-6xl tw-mx-auto tw-my-8 tw-bg-gradient-to-br tw-from-purple-900/90 tw-to-fuchsia-900/80 tw-rounded-3xl tw-shadow-2xl tw-pt-16 tw-px-6 md:tw-px-20">
+        <div className="tw-max-w-6xl tw-mx-auto tw-my-8 bg-premium-gradient tw-rounded-3xl tw-shadow-2xl tw-pt-16 tw-px-6 md:tw-px-20">
           <div className="tw-text-center">
             <span className="tw-text-amber-200 tw-font-bold tw-uppercase tw-text-sm tw-tracking-widest tw-mb-2 tw-block">
               NOW WITH PERSONALIZED PROFILES
@@ -161,7 +161,7 @@ const FeaturesSection = () => {
             <strong>DishGen's personalized AI profile feature turns our AI model into your intelligent kitchen coach</strong>, 
             always ready to help you eat better, save time, and reach your goals.
           </p>
-          <div className="tw-flex tw-flex-col md:tw-flex-row tw-gap-12 tw-items-center">
+          <div className="tw-flex tw-flex-col md:tw-flex-row tw-gap-12 tw-items-center tw-pb-16">
             <div className="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-mb-6">
               <img 
                 alt="Personalized AI Recipes" 

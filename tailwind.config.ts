@@ -84,11 +84,37 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'slideDownIn': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(-10px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fadeIn': {
+					from: {
+						opacity: '0'
+					},
+					to: {
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'slideDownIn': 'slideDownIn 0.5s ease forwards',
+				'fadeIn': 'fadeIn 0.4s ease-out forwards'
+			},
+			backgroundImage: {
+				'hero-gradient': 'linear-gradient(to bottom right, #8b2a8a, #4a1063)',
+				'features-gradient': 'linear-gradient(to bottom right, #1f1f1f, #4a1063)',
+				'premium-gradient': 'linear-gradient(to bottom right, #6b2a8a, #a02a8a)',
+				'pro-gradient': 'linear-gradient(to bottom right, #1a7a5a, #0a5a3a)'
 			}
 		}
 	},
