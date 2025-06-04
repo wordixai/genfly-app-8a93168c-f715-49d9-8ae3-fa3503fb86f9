@@ -61,7 +61,7 @@ const FeaturedRecipes = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 mb-8">
+    <div className="max-w-6xl mx-auto px-4 mb-8 py-8 bg-white">
       <h2 className="my-6 text-center text-4xl font-bold font-secondary">
         Featured AI Recipes
       </h2>
